@@ -1,0 +1,45 @@
+
+#pagina{
+   
+    width: 800px;
+    margin-left: 200px;
+    
+}
+
+.sottologo {
+    background-color: beige;
+    color: darkolivegreen;
+    border-top:solid chocolate;
+    padding: 1.2em;
+    
+}
+
+.collegamento {
+    
+    border-left:solid chocolate;
+    padding-left: 12px;
+}
+
+.centrale {
+    color: red;
+}
+
+#logo {
+    text-align: center;
+}
+
+.ingredienti {
+    margin:30px;
+    font-size:xx-large;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+.autrice {
+    color: rgb(109, 97, 97);
+    }
+
+li {
+    margin: 10px;
+
+}
