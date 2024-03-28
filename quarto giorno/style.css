@@ -1,0 +1,52 @@
+
+    body  {
+        font-family: "Poppins", sans-serif;
+        width: 1000px;
+    }
+    
+    #testata {
+    background-color: darkcyan;
+    margin:auto;
+    border: 3px solid color gray;
+    text-align: center;
+    color: white;
+    width: 50%;
+
+}
+
+main {
+    background-color: white;
+    border: 3px solid gray ;
+   padding-left: 10px;
+   padding: 8px;
+    width: 50%;
+    margin:auto
+
+}
+
+.autore {
+    color: gray;
+}
+
+th {
+    background-color: cornflowerblue;
+    color: white;
+        
+}
+
+.correlati {
+    background-color: gray;
+    border: solid 3px black;
+}
+
+footer {
+
+    background-color: darkslategray;
+    color: white;
+    border: 3px solid gray ;
+    padding-left: 10px;
+    padding: 8px;
+     width: 50%;
+     margin:auto
+
+}
