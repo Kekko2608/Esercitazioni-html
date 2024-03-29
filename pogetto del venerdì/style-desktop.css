@@ -1,0 +1,140 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    line-height: 1.65;
+    color:  #393d41;
+    margin: 0;
+}
+
+
+/************ header **************/
+
+header {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+
+.logo {
+    background-color: black;
+    margin: 0;
+    height: 80px;
+}
+
+#logo {
+    width: 180px;
+    margin-left: 20px;
+    margin: 10px ;
+
+}
+
+h1 {
+    color: #25a2c3;
+
+}
+
+#testata {
+    background-image: url(./assets/banner.jpg) ;
+    background-size:cover ;
+    padding: 50px 20px;
+    margin-top: 0;
+    height: 500px;
+}
+
+.partiamo {
+    background-color: #f04c2f;
+    color: white;
+    width: 250px;
+    border-radius: 4%;
+    margin: auto;
+    padding: 5px 3px;
+
+}
+
+.part {
+    text-decoration: none;
+}
+
+/************ fine header ****************/
+
+/************inizio main ****************/
+
+h3 {
+    color: #25a2c3;
+}
+
+#notebook {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    float: left;
+    margin: 0 40px;
+    padding-top: 50px;
+}
+
+.scritte {
+    margin: 0 10px;
+    font-size: large;
+    height: 600px;
+    padding-top: 50px;
+
+}
+
+.riquadro {
+    background-color: #f04c2f;
+    color: white;
+    padding: 50px 10px;
+    text-align: center;
+    font-size: large;
+}
+
+
+#tris {
+    background-color: white;
+}
+
+
+.portatile {
+    border:1px solid #dee1e3;
+    border-radius: 3%;
+    margin: 15px;
+    padding: 10px;
+    width: 400px;
+    height: 700px;
+    float: left;
+    text-align: center;
+}
+
+.pc{
+
+    width: 100%;
+    height: 300px;
+}
+
+/**************fine main ****************/
+
+/**************inizio footer ****************/
+
+#footer {
+    text-align: center;
+    border: 2px solid black;
+}
+
+hr {
+    width: 200px;
+}
+
+a {
+    color: #c8e7f0;
+}
+
+a:hover {
+    color: red;
+}
+
+aside p {
+    margin: auto;
+}
+
+
+/********** fine footer ****************/
