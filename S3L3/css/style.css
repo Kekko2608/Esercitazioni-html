@@ -1,0 +1,26 @@
+
+body {
+    text-align: center;
+    font-size:large;
+    background-color: blueviolet;
+    
+}
+
+form {
+    display: inline;
+}
+
+button {
+    background-color: orangered;
+}
+
+ul {
+    background-color: white;
+    width: 50%;
+    margin-left: 10%;
+    list-style-type: none;
+}
+
+.myclass {
+    text-decoration:line-through;
+}
