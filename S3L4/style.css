@@ -1,0 +1,40 @@
+
+body {
+    text-align: center;
+}
+
+#main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+#cartel_number {
+    margin-bottom: 1em;
+}
+
+.numberCell {
+  display: inline-block;
+  width: 6%;
+  position: relative;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#tabellone {
+    margin-bottom: 2em;
+  
+}
+
+#random_number {
+    margin-bottom: 4em;
+}
+
+.numberCellSelected {
+    background-color:red;
+}
+
+#bottone {
+    width: 200px;
+    margin-bottom: 10px;
+}
