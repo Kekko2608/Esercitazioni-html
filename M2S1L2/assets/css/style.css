@@ -1,0 +1,515 @@
+/* IMPOSTAZIONI GENERALI */
+html {font-size: 62.5%;}
+body { 
+    font-family: Poppins, 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-image: url('../img/sfondo.png');
+    background-position: center center; 
+}
+* {box-sizing: border-box;}
+hr {display: none;} /* rimuove l'elemento */
+
+/* HEADER */
+header {
+    background: rgb(0,160,198);
+    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;  
+    box-shadow: 0 3px 3px #444;
+    margin-bottom: 1.5em;
+    padding: 2em 1.5em;
+}
+header div img {
+    margin-bottom: 20px;
+}
+header nav ul {
+    margin: 0;
+}
+header nav li {
+    list-style: none;
+}
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+header nav li a:hover {
+    color: red;
+}
+header nav li a::before {
+    content: "\22c6\0020";
+}
+
+/* MAIN */
+main {
+    background-color: #fff;
+    box-shadow: 0 3px 3px #444;
+    padding: 2em 1em;
+    margin-bottom:1.5em ;
+}
+section { 
+    background-color: #e3e3e3;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+#badge {
+    border: solid 5px rgb(2, 76, 91);
+    outline: solid 5px rebeccapurple;
+    padding: 2px;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.7em;
+}
+p, address, ul, ol, dl, blockquote {
+    margin-bottom: 1.2em;
+}
+h1 + p {
+    color: #a0a0a0;
+}
+ul, ol {
+    margin-left: 2em;
+}
+a {
+    color: #00A0C6;
+    font-weight: bold;
+}
+strong {
+    color: #a02571;
+    font-weight: bold;
+}
+code {
+    background-color: #e3e3e3;
+    border: 1px solid #969494;
+    border-radius: 5px;
+}
+iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
+
+/* TABELLE */
+table {
+    margin-bottom: 2em;
+}
+caption {
+    font-weight: bold;
+    font-style: italic;
+}
+thead tr {
+    background-color: #3f6bca;
+    color: #ffffff;
+}
+th, td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+}
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #3f6bca;
+}
+
+/* FORM */
+input {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px dashed #333;
+}
+button {
+    padding: 4px 7px;
+    background-color: #3f6bca;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+aside div {
+    background-color: #e3e3e3;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+aside div p:last-child {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+
+/* FOOTER */
+footer {
+    background: rgb(53,53,53);
+    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    box-shadow: 0 3px 3px #444;
+    color: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer a {
+    color: fuchsia;
+}
+
+#nov {
+    background-color: gray;
+}
+
+#striscia {
+        position: relative;
+        z-index: 0;
+        top: -45px;
+    }
+
+
+
+/*-----------------------media queries -----------------------------*/
+
+@media screen and (max-width:577px){
+    body {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 2.2em;
+        position: relative;
+        z-index: 1;
+    }
+   nav ul li {
+        display: inline;
+        margin: 0 5px;
+    }
+
+    #badge {
+        float: left;
+        margin-right: 15px;
+    }
+
+    #nov {
+        position: relative;
+        top: -41px;
+        width: 180px;
+        height: 40px;
+        margin: 0;
+        align-content: center;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+    
+    .button2 {
+        position: relative;
+        top: 196px;
+        left: 146px;
+        border: 3px solid white;
+        background-color: lightgrey;
+        color: red;
+    
+    }
+
+    .button1 {
+        position: relative;
+        top: 103px;
+        left: 183px;
+        border: 3px solid white;
+        background-color: lightgrey;
+        color: blue;
+    
+    }
+    
+    
+    .button {
+        position: relative;
+        top: 6px;
+        left: 218px;
+        border: 3px solid white;
+        background-color: lightgrey;
+        color: blue;
+    }
+    }
+    
+    
+    
+
+@media screen and (min-width:769px){
+    table {
+        margin: 50px auto;
+    }
+    h1 {
+        font-size: 3em;
+        margin-right: 10%;
+        position: relative;
+        z-index: 1;
+        
+    }
+    #badge {
+        float: left;
+        margin-right: 15px;
+    }
+
+    body {
+        font-size: 2rem;
+    }
+    #formattazione{
+        font-weight: bold;
+    }
+    fieldset input{
+        padding: 10px;
+        width: 80%;
+    }
+    fieldset button{
+        padding: 10px;
+    }
+    footer{
+        font-size: 1em;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 5px;
+    }
+
+    #striscia {
+        position: relative;
+        z-index: 0;
+        top: -62px;
+        width: 523px;
+    }
+    #nov {
+        position: relative;
+        top: -41px;
+        width: 180px;
+        height: 40px;
+        margin: 0;
+        align-content: center;
+    }
+
+    main {
+        background-color: #fff;
+        box-shadow: 0 3px 3px #444;
+        padding: 1em 1em;
+        margin-bottom: 1.5em;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+    .button2 {
+        position: relative;
+        top: 145px;
+        left: 363px;
+        border: 3px solid white;
+        background-color: lightgrey;
+        color: red;
+        width: 3em;
+    
+    }
+
+    .button1 {
+        position: absolute;
+        top: 96px;
+        right: 60px;
+        border: 3px solid white;
+        background-color: lightgrey;
+        color: blue;
+        width: 3em;
+    }
+
+    
+    
+    .button {
+        position: absolute;
+        top: 44px;
+        right: 60px;
+        border: 3px solid white;
+        background-color: lightgrey;
+        color: blue;
+        width: 3em;
+    }
+}
+
+
+@media screen and (min-width:1201px){
+    
+        header{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 20px;
+            
+        }
+    
+        header div {
+            display: flex;
+            align-items: center;
+    
+        }
+    
+        header div p {
+            margin: 0;
+        }
+    
+        header nav{
+            align-self: center;
+            float: right;
+            margin-left: 4em;
+         }
+    
+        header nav ul{
+            display: inline;
+            white-space: no-wrap;
+        }
+
+        header div img{
+            margin-top: 10px;
+        }
+
+        body {
+            margin: 0 100px;
+            line-height: 1.7;
+        }
+
+        h1 {
+            font-size: 2.3em;
+            position: relative;
+            z-index: 1;
+            
+        }
+
+        #video {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 70%;
+        }
+
+        section {
+            margin: 0 5px;
+            padding: 0;
+            border-radius: 4%;
+        }
+        fieldset input{
+            padding: 10px;
+            width: 70%;
+            margin-left: 10px;
+        }
+
+         #container {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container div {
+            width: 33%;
+            margin: 0;
+        }
+
+        footer{
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+
+        #striscia {
+            position: relative;
+            z-index: 0;
+            top: -22px;
+            width: 435px;
+            left: 38%;
+        }
+        
+
+        h1 {
+            font-weight: bold;
+            letter-spacing: -0.03em;
+            margin: 0;
+        }
+
+        #nov {
+            position: relative;
+            top: -22px;
+            width: 136px;
+            height: 40px;
+            margin: 0;
+            align-content: center;
+            left: 28px;
+        }
+
+        header {
+            position: fixed;
+            top:0;
+          }
+          .button2 {
+            position: relative;
+            top: 155px;
+            left: 531px;
+            border: 3px solid white;
+            background-color: lightgrey;
+            color: red;
+        }
+
+        .button1 {
+            position: absolute;
+            top: 96px;
+            right: 60px;
+            border: 3px solid white;
+            background-color: lightgrey;
+            color: blue;
+            width: 3em;
+        }
+    
+        
+        
+        .button {
+            position: absolute;
+            top: 44px;
+            right: 60px;
+            border: 3px solid white;
+            background-color: lightgrey;
+            color: blue;
+            width: 3em;
+        }
+    }
