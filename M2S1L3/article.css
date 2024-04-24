@@ -1,0 +1,26 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+article {
+  background-color: antiquewhite;
+  border-radius: 20px;
+  display: flex;
+}
+
+img {
+  margin: 25px;
+}
+
+#testo {
+  margin: 30px 10px;
+  color: #795548;
+}
+
+@media screen and (max-width: 576px) {
+  article {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

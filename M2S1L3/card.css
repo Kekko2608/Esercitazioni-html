@@ -1,0 +1,44 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#container {
+  border-radius: 80px;
+  width: 300px;
+  background-color: lightyellow;
+  text-align: center;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  margin: 0;
+  border-radius: 80px 80px 0 0;
+  height: 14em;
+}
+
+#leggenda {
+  display: flex;
+  justify-content: space-evenly;
+  color: darkred;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#description {
+  display: flex;
+  flex-direction: column;
+}
+
+div p {
+  margin: 5px;
+}
+
+button {
+  margin: 10px;
+  background-color: rgba(255, 187, 0, 0.734);
+  border: none;
+  border-radius: 30px;
+  color: darkred;
+}

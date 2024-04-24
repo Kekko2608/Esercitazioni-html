@@ -1,0 +1,33 @@
+#bar {
+  background-color: lightyellow;
+  display: flex;
+  border-radius: 65px;
+  justify-content: space-around;
+  padding: 30px;
+  align-items: center;
+}
+
+img {
+  width: 5em;
+}
+
+.button {
+  width: 7em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 187, 0, 0.5);
+  color: darkred;
+}
+
+#shop {
+  width: 12em;
+  height: 5em;
+  border-radius: 40px;
+  font-weight: bold;
+  color: darkred;
+  font-size: 1.1em;
+}
