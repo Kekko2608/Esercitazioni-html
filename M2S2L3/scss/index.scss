@@ -1,0 +1,92 @@
+
+@import "./partials/animazioni";
+@import "./partials/bottoni";
+@import "./partials/colori";
+@import "./partials/font";
+@import "./partials/mix-generici";
+@import "./partials/reset";
+@import "./partials/spaziature";
+
+
+
+
+#logo {
+    width: 4em;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2em 2em 2em;
+    border-bottom:1px solid black;
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        margin-right: 2em;
+        
+    }
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+section {
+    display: flex;
+    padding: 1em 2em;
+    margin: 0 4em;
+
+
+    .button1 {
+        @include buttonStyles ;
+        background-color: #0e6cff;
+    }
+    .button2 {
+        @include buttonStyles ;
+        background-color: #ff8700;
+    }
+    .button3 {
+        @include buttonStyles ;
+        background-color: #4caf50;
+    }
+
+    img {
+      @include floating;
+    }
+
+    
+}
+h1 {
+    @include title-big ;
+    @include color-big;
+}
+
+main {
+
+    div {
+        @include grid;
+        margin-top: 4em;
+
+    }
+    img {
+        margin: 5px;
+        width: 24%;
+        border-radius: 10px;
+    }
+}

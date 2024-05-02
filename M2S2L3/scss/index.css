@@ -1,0 +1,134 @@
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header {
+  background-color: #640fc5;
+}
+
+section {
+  color: white;
+}
+
+nav ul a {
+  color: white;
+}
+
+html, body, div, form, fieldset, legend, label {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6, th, td, caption {
+  font-weight: normal;
+}
+
+#logo {
+  width: 4em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2em 2em 2em;
+  border-bottom: 1px solid black;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 2em;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+section {
+  display: flex;
+  padding: 1em 2em;
+  margin: 0 4em;
+}
+section .button1 {
+  color: white;
+  padding: 1em 1em;
+  border: none;
+  border-radius: 5px;
+  margin: 0 2px;
+  background-color: #0e6cff;
+}
+section .button2 {
+  color: white;
+  padding: 1em 1em;
+  border: none;
+  border-radius: 5px;
+  margin: 0 2px;
+  background-color: #ff8700;
+}
+section .button3 {
+  color: white;
+  padding: 1em 1em;
+  border: none;
+  border-radius: 5px;
+  margin: 0 2px;
+  background-color: #4caf50;
+}
+section img {
+  border-radius: 20px;
+  box-shadow: 5px 10px 5px black;
+  border: 1px solid white;
+  position: relative;
+  top: 4em;
+  width: 30em;
+  margin: auto 2em;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: rgb(36, 35, 35);
+}
+
+main div {
+  display: flex;
+  margin-top: 4em;
+}
+main img {
+  margin: 5px;
+  width: 24%;
+  border-radius: 10px;
+}/*# sourceMappingURL=index.css.map */

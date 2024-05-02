@@ -1,0 +1,15 @@
+header {
+    background-color:#640fc5;
+}
+
+section {
+    color: white;
+}
+
+@mixin color-big {
+    color: rgb(36, 35, 35);
+}
+
+nav ul a {
+    color: white;
+}
