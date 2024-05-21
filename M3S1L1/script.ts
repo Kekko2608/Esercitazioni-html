@@ -31,5 +31,5 @@ const user1 = new User('Mario', 'Rossi')
 user1.ricarica(10)
 user1.chiamata(5);
 
-console.log('Credito dopo la ricarica' + user1.credito);
+console.log('Credito dopo la ricarica ' + user1.credito);
 
