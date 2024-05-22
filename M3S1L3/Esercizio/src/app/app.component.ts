@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { iPost } from './Models/post';
+import { iJsonContent } from './Models/object';
 
 @Component({
   selector: 'app-root',
@@ -21,9 +22,9 @@ ngOnInit(){
  async getPosts():Promise<void>{
 
  let response = await fetch(this.api)
- let posts = <iPost[]> await response.json()
+ let posts = <iJsonContent> await response.json()
 
- this.postArr = posts;
+ this.postArr = posts.posts;
 
 }
 }
