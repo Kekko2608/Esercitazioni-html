@@ -26,5 +26,4 @@ ngOnInit(){
  this.postArr = posts;
 
 }
-
 }
