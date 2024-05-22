@@ -1,4 +1,4 @@
-import { iPost } from "./post"
+import { iPost } from "./iPost"
 
 export interface iJsonContent {
   posts : iPost[]

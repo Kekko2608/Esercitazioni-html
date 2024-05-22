@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { iPost } from './Models/post';
-import { iJsonContent } from './Models/object';
+import { iPost } from './Models/iPost';
+import { iJsonContent } from './Models/iJsonContent';
 
 @Component({
   selector: 'app-root',
