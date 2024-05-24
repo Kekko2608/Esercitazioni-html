@@ -1,0 +1,56 @@
+[
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://download.logo.wine/logo/Fiat_Automobiles/Fiat_Automobiles-Logo.wine.png",
+        "model": "500L",
+        "modelImage": "https://www.automobilismo.it/files/articoli/3/5/1/35185/B_fiat-500-l-8.jpg",
+        "year": 2015,
+        "price": 7500,
+        "available": false
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://download.logo.wine/logo/Fiat_Automobiles/Fiat_Automobiles-Logo.wine.png",
+        "model": "500 Abarth",
+        "modelImage": "https://www.automobilismo.it/files/articoli/2/3/9/23978/B_abarth-abarth-595-biposto-abarth-695-biposto-record-francoforte-2015-500-abarth-prezzo_1.jpg",
+        "year": 2010,
+        "price": 3500,
+        "available": true
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://www.pngmart.com/files/9/Ford-Logo-PNG-Photos.png",
+        "model": "Taurus",
+        "modelImage": "https://3dwarehouse.sketchup.com/warehouse/v1.0/content/public/9a0533fa-54c9-417d-ae20-150519e582cb",
+        "year": 2009,
+        "price": 5200,
+        "available": false
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://www.pngmart.com/files/9/Ford-Logo-PNG-Photos.png",
+        "model": "Focus",
+        "modelImage": "https://www.fordblubayspa.it/media/bixaemx3/ford-focus-rs-l-icona-sportiva-fuori-produzione-ma-sempre-amata-dagli-appassionati.jpg",
+        "year": 2014,
+        "price": 9700,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://logowik.com/content/uploads/images/562_audi.jpg",
+        "model": "A3",
+        "modelImage": "https://stzluxuryrent.it/wp-content/uploads/2023/11/AUDI-RS3-SPORTBACK-FRONTE-DX.jpg",
+        "year": 2012,
+        "price": 4300,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://logowik.com/content/uploads/images/562_audi.jpg",
+        "model": "Q7",
+        "modelImage": "https://cdn.drivek.com/configurator-imgs/cars/it/Original/AUDI/Q7/43953_SUV-5-DOORS/audi-q7-front-view.jpg",
+        "year": 2020,
+        "price": 41700,
+        "available": false
+    }
+]

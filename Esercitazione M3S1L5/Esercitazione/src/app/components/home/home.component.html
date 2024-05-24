@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="row mt-5">
+    <div class="col-12 d-flex justify-content-center">
+      <ul class="d-flex align-items-center">
+        <li
+          class="list-unstyled mx-5"
+          *ngFor="let uniqueBrandLogo of uniqueBrandLogos"
+        >
+          <img src="{{ uniqueBrandLogo }}" alt="" style="width: 10em" />
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center fs-1">Ultimi arrivi</div>
+  <div class="row mt-4 text-center">
+    <div class="col-6" *ngFor="let randomAuto of randomAutos">
+      <div
+        class="card h-100"
+        [ngClass]="{
+          'border border-success border-4': randomAuto.available,
+          'border border-danger border-5': !randomAuto.available
+        }"
+      >
+        <img
+          src="{{ randomAuto.modelImage }}"
+          class="card-img-top img-fluid h-100"
+          alt="imgAuto"
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">
+            {{ randomAuto.brand }} {{ randomAuto.model }}
+          </h5>
+          <p class="card-text text-center fs-3">
+            Anno di uscita: {{ randomAuto.year }}
+          </p>
+          <p class="card-text fs-3 text-center">
+            Prezzo: {{ randomAuto.price }} €
+          </p>
+          <a
+            routerLink="/{{ randomAuto.brand.toLowerCase() }}"
+            class="btn btn-primary"
+          >
+            Tutte le nostre {{ randomAuto.brand }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
