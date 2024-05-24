@@ -9,23 +9,28 @@ import { Page404Component } from './components/page404/page404.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    title: "Home"
 },
 {
     path: 'fiat',
-    component: FiatComponent
+    component: FiatComponent,
+    title: "Fiat"
 },
 {
     path: 'ford',
-    component: FordComponent
+    component: FordComponent,
+    title: "Ford"
 },
 {
     path: 'audi',
-    component: AudiComponent
+    component: AudiComponent,
+    title: "Audi"
 },
 {
     path: '**',
-    component: Page404Component
+    component: Page404Component,
+    title: "Error 404"
 }
 ];
 
