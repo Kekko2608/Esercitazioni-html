@@ -3,9 +3,24 @@
     <div class="card-header">
         {{ p.tags.join(", ") }}
     </div>
-    <div class="card-body">
+    <div
+        class="card-body"
+        [ngClass]="{
+            'border border-primary border-4': p.active,
+            'border border-none': !p.active
+        }"
+    >
         <h5 class="card-title">{{ p.title }}</h5>
         <p class="card-text">{{ p.body }}</p>
+        <form>
+            <input
+                type="text"
+                class="form-control"
+                name="modifica"
+                placeholder="modifica"
+                [(ngModel)]="p.body"
+            />
+        </form>
         <a [routerLink]="['/post', p.id]" class="btn btn-primary">Dettagli</a>
     </div>
 </div>

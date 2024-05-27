@@ -29,10 +29,7 @@ const routes: Route[] = [
         path: 'post/:id',
         component: PostDetailComponent,
     },
-    {
-        path: '**',
-        redirectTo: '',
-    },
+
     {
         path: 'tutti',
         component: TuttiComponent,
@@ -40,6 +37,10 @@ const routes: Route[] = [
     {
         path: 'single-post',
         component: SinglePostComponent,
+    },
+    {
+        path: '**',
+        redirectTo: '',
     },
 ];
 

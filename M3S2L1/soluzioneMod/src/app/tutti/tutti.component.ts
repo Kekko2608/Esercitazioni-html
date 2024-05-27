@@ -16,5 +16,6 @@ export class TuttiComponent {
 
     ngOnInit() {
         this.posts = this.postSvc.post
+        console.log(this.posts)
     }
 }
