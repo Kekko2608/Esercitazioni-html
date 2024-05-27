@@ -1,0 +1,11 @@
+<h1 class="text-center">Tutti i post</h1>
+<div class="card my-2" *ngFor="let p of posts">
+    <div class="card-header">
+        {{ p.tags.join(", ") }}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{ p.title }}</h5>
+        <p class="card-text">{{ p.body }}</p>
+        <a [routerLink]="['/post', p.id]" class="btn btn-primary">Dettagli</a>
+    </div>
+</div>

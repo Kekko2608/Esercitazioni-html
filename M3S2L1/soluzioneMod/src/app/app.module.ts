@@ -10,6 +10,7 @@ import { InactivePostsComponent } from './components/inactive-posts/inactive-pos
 import { PostDetailComponent } from './components/post-detail/post-detail.component';
 import { SinglePostComponent } from './single-post/single-post.component';
 import { FormsModule } from '@angular/forms';
+import { TuttiComponent } from './tutti/tutti.component';
 
 const routes: Route[] = [
     {
@@ -32,6 +33,14 @@ const routes: Route[] = [
         path: '**',
         redirectTo: '',
     },
+    {
+        path: 'tutti',
+        component: TuttiComponent,
+    },
+    {
+        path: 'single-post',
+        component: SinglePostComponent,
+    },
 ];
 
 @NgModule({
@@ -43,6 +52,7 @@ const routes: Route[] = [
         InactivePostsComponent,
         PostDetailComponent,
         SinglePostComponent,
+        TuttiComponent,
     ],
     imports: [BrowserModule, RouterModule.forRoot(routes), FormsModule],
     providers: [],

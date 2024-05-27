@@ -60,7 +60,7 @@
                         >{{ tag }}</span
                     >
                     <br />
-                    {{ post.reactions }} 👍
+                    {{ post.reactions }}
                 </li>
             </ul>
             <h5>Vedi anche:</h5>
@@ -75,23 +75,6 @@
         </div>
     </div>
     <div>
-        <h4>Tutti i post</h4>
-        <div
-            class="card-text border border-3 border-black"
-            *ngFor="let p of posts"
-        >
-            <p>{{ p.title }}</p>
-            <p>{{ p.body }}</p>
-            <p>Reactions {{ p.reactions }}</p>
-            <form>
-                <input
-                    type="text"
-                    class="form-control"
-                    name="modifica"
-                    placeholder="modifica"
-                    [(ngModel)]="posts[2].body"
-                />
-            </form>
-        </div>
+        <a [routerLink]="['tutti']">Tutti i post</a>
     </div>
 </div>

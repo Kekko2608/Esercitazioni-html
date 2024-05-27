@@ -3,12 +3,11 @@ import { Post } from '../models/post.interface';
 import { PostServiceService } from '../post.service.service';
 
 @Component({
-  selector: 'app-single-post',
-  templateUrl: './single-post.component.html',
-  styleUrls: ['./single-post.component.scss']
+  selector: 'app-tutti',
+  templateUrl: './tutti.component.html',
+  styleUrls: ['./tutti.component.scss']
 })
-export class SinglePostComponent {
-
+export class TuttiComponent {
     posts: Post[] = [];
 
     constructor(
@@ -18,5 +17,4 @@ export class SinglePostComponent {
     ngOnInit() {
         this.posts = this.postSvc.post
     }
-
 }
