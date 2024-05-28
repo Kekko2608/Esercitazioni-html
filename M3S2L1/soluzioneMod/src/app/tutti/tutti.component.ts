@@ -10,6 +10,7 @@ import { PostServiceService } from '../post.service.service';
 export class TuttiComponent {
     posts: Post[] = [];
     filteredPosts: any[] = [];
+    uniqueTags: Set<string> = new Set<string>();
 
     constructor(
         private postSvc : PostServiceService
@@ -17,10 +18,19 @@ export class TuttiComponent {
 
     ngOnInit() {
         this.posts = this.postSvc.post
+        this.getUniqueTags();
+        this.filteredPosts = this.posts;
         console.log(this.posts)
     }
 
     filterPosts(tag: string) {
         this.filteredPosts = this.posts.filter(post => post.tags.includes(tag));
       }
-}
+
+      getUniqueTags() {
+        this.posts.forEach(post => {
+            post.tags.forEach(tag => {
+                this.uniqueTags.add(tag);
+            });
+        });
+}}

@@ -10,13 +10,13 @@ export class ColoraDirective implements OnInit {
       constructor(private ref: ElementRef) { }
 
       ngOnInit() {
-        console.log(this.ref.nativeElement); // Log the DOM element to which the directive is attached
+        console.log(this.ref.nativeElement);
 
         if (!this.colore) {
-          this.colore = this.getRandomColor(); // Generate a random color if no color is provided
+          this.colore = this.getRandomColor();
         }
 
-        this.ref.nativeElement.style.backgroundColor = this.colore; // Apply the background color to the element
+        this.ref.nativeElement.style.backgroundColor = this.colore;
       }
 
       private getRandomColor(): string {

@@ -1,12 +1,16 @@
 <h1 class="text-center">Tutti i post</h1>
 <h3>Filtered by:</h3>
-<div class="btn" *ngFor="let p of posts">
-    <button type="button" class="btn btn-outline-secondary d-flex">
-        {{ p.tags[0] }}
+<div class="btn" *ngFor="let tag of uniqueTags">
+    <button
+        type="button"
+        class="btn btn-outline-secondary d-flex"
+        (click)="filterPosts(tag)"
+    >
+        {{ tag | uppercase }}
     </button>
 </div>
 
-<div class="card my-2" *ngFor="let p of posts">
+<div class="card my-2" *ngFor="let p of filteredPosts">
     <div
         class="card-body"
         [ngClass]="{
@@ -41,14 +45,12 @@
         <form>
             <input
                 type="text"
-                class="form-control"
+                class="form-control mt-2"
                 name="modifica"
                 placeholder="modifica"
                 [(ngModel)]="p.body"
             />
         </form>
-        <a [routerLink]="['/post', p.id]" class="btn btn-primary mt-3"
-            >Dettagli</a
-        >
+        <a [routerLink]="['/post', p.id]" class="btn btn-primary mt-3">Edit</a>
     </div>
 </div>
