@@ -9,7 +9,9 @@
     >
         <h5 class="card-title">{{ p.title }}</h5>
         <p class="card-text">{{ p.body }}</p>
-        <p class="card-text" appColora>{{ p.tags }}</p>
+        <p class="btn btn-outline-secondary" appColora>{{ p.tags[0] }}</p>
+        <p class="btn btn-outline-secondary mx-2" appColora>{{ p.tags[1] }}</p>
+        <p class="btn btn-outline-secondary" appColora>{{ p.tags[2] }}</p>
         <form>
             <input
                 type="text"
