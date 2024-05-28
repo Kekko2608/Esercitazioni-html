@@ -11,6 +11,7 @@ import { PostDetailComponent } from './components/post-detail/post-detail.compon
 import { SinglePostComponent } from './single-post/single-post.component';
 import { FormsModule } from '@angular/forms';
 import { TuttiComponent } from './tutti/tutti.component';
+import { ColoraDirective } from './colora.directive';
 
 const routes: Route[] = [
     {
@@ -54,6 +55,7 @@ const routes: Route[] = [
         PostDetailComponent,
         SinglePostComponent,
         TuttiComponent,
+        ColoraDirective,
     ],
     imports: [BrowserModule, RouterModule.forRoot(routes), FormsModule],
     providers: [],

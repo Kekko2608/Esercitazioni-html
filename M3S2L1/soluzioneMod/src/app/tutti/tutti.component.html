@@ -1,8 +1,5 @@
 <h1 class="text-center">Tutti i post</h1>
 <div class="card my-2" *ngFor="let p of posts">
-    <div class="card-header">
-        {{ p.tags.join(", ") }}
-    </div>
     <div
         class="card-body"
         [ngClass]="{
@@ -12,6 +9,7 @@
     >
         <h5 class="card-title">{{ p.title }}</h5>
         <p class="card-text">{{ p.body }}</p>
+        <p class="card-text" appColora>{{ p.tags }}</p>
         <form>
             <input
                 type="text"
@@ -21,6 +19,8 @@
                 [(ngModel)]="p.body"
             />
         </form>
-        <a [routerLink]="['/post', p.id]" class="btn btn-primary">Dettagli</a>
+        <a [routerLink]="['/post', p.id]" class="btn btn-primary mt-3"
+            >Dettagli</a
+        >
     </div>
 </div>

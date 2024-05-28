@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/models/post.interface';
 import { PostServiceService } from 'src/app/post.service.service';
 
@@ -7,19 +7,22 @@ import { PostServiceService } from 'src/app/post.service.service';
     templateUrl: './active-posts.component.html',
     styleUrls: ['./active-posts.component.scss'],
 })
-export class ActivePostsComponent {
 
-    postsArr: Post[] = [];
+    export class ActivePostsComponent implements OnInit {
 
-    constructor(
-        private postSvc:PostServiceService
-      ){}
+        postsArr: Post[] = [];
 
+        constructor(private postSvc: PostServiceService) {}
 
-    ngOnInit() {
-        this.postsArr = this.postSvc.post
-        };
-    }
+        ngOnInit() {
+          this.postsArr = this.inactivePosts;
+        }
+
+        get inactivePosts(): Post[] {
+          return this.postSvc.post.filter((post) => post.active);
+        }
+      }
+
 
 
 
