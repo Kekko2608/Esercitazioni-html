@@ -9,6 +9,7 @@ import { PostServiceService } from '../post.service.service';
 })
 export class TuttiComponent {
     posts: Post[] = [];
+    filteredPosts: any[] = [];
 
     constructor(
         private postSvc : PostServiceService
@@ -18,4 +19,8 @@ export class TuttiComponent {
         this.posts = this.postSvc.post
         console.log(this.posts)
     }
+
+    filterPosts(tag: string) {
+        this.filteredPosts = this.posts.filter(post => post.tags.includes(tag));
+      }
 }
