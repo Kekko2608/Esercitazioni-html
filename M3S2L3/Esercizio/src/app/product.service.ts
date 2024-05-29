@@ -7,8 +7,7 @@ import { iProduct } from './modules/i-product';
   providedIn: 'root'
 })
 export class ProductService {
-  private carrelloArr: number[] = [];
-
+  private cart: number[] = [];
   apiUrl:string = "https://dummyjson.com/products"
 
   constructor(private http:HttpClient) { }
@@ -20,12 +19,17 @@ export class ProductService {
   }
 
   addToCart(productId: number): void {
-    if (!this.carrelloArr.includes(productId)) {
-      this.carrelloArr.push(productId);
+    if (!this.cart.includes(productId)) {
+      this.cart.push(productId);
     }
   }
 
+  getCart(): Observable<iProduct[]> {
+    const cartIds = this.cart.join(',');
+    const url = `${this.apiUrl}/cart?ids=${cartIds}`;
 
+    return this.http.get<iProduct[]>(url);
+  }
 
 
 }
