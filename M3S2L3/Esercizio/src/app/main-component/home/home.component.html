@@ -1,1 +1,16 @@
-<p>home works!</p>
+<div class="card" *ngFor="let p of productArr">
+  <img src="{{ p.images }}" class="card-img-top" />
+  <div class="card-body">
+    <h5 class="card-title">{{ p.title }}</h5>
+    <p class="card-text">
+      {{ p.description }}
+    </p>
+    <p class="btn btn-primary">{{ p.price }}</p>
+    <a [routerLink]="'preferiti'" class="btn btn-success ms-3"
+      >Aggiungi ai preferiti</a
+    >
+    <a [routerLink]="'carrello'" class="btn btn-success ms-3"
+      >Aggiungi al carrello</a
+    >
+  </div>
+</div>

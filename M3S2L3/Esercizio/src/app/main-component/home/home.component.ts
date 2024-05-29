@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { iProduct } from '../../modules/i-product';
+import { ProductService } from '../../product.service';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+productArr:iProduct[] = []
+
+constructor(private productSvc:ProductService){}
+
+ngOnInit(){
+  this.productSvc.getAll().subscribe(products => {
+    this.productArr = products
+    console.log(this.productArr)
+  })
+
+}
 }
