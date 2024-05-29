@@ -18,8 +18,9 @@ export class CarrelloComponent implements OnInit {
   }
 
   getCartProducts(): void {
-    this.prodSvc.getCart().subscribe(products => { // Modifica 'addToCart' in 'getCart'
+    this.prodSvc.getCart().subscribe(products => {
       this.carrelloArr = products;
+      console.log(this.carrelloArr)
     });
   }
 }
