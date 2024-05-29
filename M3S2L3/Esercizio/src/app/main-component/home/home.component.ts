@@ -20,4 +20,9 @@ ngOnInit(){
   })
 
 }
+
+addToCart(productId: number): void {
+  this.productSvc.addToCart(productId);
 }
+}
+

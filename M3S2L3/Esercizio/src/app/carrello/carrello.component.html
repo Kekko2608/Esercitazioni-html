@@ -1,1 +1,12 @@
 <p>carrello works!</p>
+
+<div class="card" *ngFor="let p of carrelloArr">
+  <img src="{{ p.images }}" class="card-img-top" />
+  <div class="card-body">
+    <h5 class="card-title">{{ p.title }}</h5>
+    <p class="card-text">
+      {{ p.description }}
+    </p>
+    <p class="btn btn-primary">{{ p.price }}</p>
+  </div>
+</div>

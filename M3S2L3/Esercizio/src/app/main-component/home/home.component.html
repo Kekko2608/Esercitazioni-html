@@ -9,7 +9,10 @@
     <a [routerLink]="'preferiti'" class="btn btn-success ms-3"
       >Aggiungi ai preferiti</a
     >
-    <a [routerLink]="'carrello'" class="btn btn-success ms-3"
+    <a
+      [routerLink]="'carrello'"
+      class="btn btn-success ms-3"
+      (click)="addToCart(p.id)"
       >Aggiungi al carrello</a
     >
   </div>

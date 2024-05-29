@@ -7,7 +7,7 @@ import { iProduct } from './modules/i-product';
   providedIn: 'root'
 })
 export class ProductService {
-
+  private carrelloArr: number[] = [];
 
   apiUrl:string = "https://dummyjson.com/products"
 
@@ -18,6 +18,14 @@ export class ProductService {
     return this.http.get<{ products: iProduct[] }>(this.apiUrl)
       .pipe(map(response => response.products));
   }
+
+  addToCart(productId: number): void {
+    if (!this.carrelloArr.includes(productId)) {
+      this.carrelloArr.push(productId);
+    }
+  }
+
+
 
 
 }
