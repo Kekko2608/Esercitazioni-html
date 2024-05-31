@@ -1,4 +1,4 @@
-<h1 class="text-center mt-2">Completed</h1>
+<h2 class="text-center mt-2 fst-italic">Completed</h2>
 
 <div class="container">
   <div class="row">
@@ -10,7 +10,7 @@
             *ngIf="t.completed"
           >
             <div>
-              <div>{{ t.todo }}</div>
+              <div class="fs-5 fw-bold">{{ t.todo }}</div>
               <div>
                 Assegnato a: {{ t.user?.firstName }} {{ t.user?.lastName }}
               </div>
