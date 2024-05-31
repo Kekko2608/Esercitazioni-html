@@ -1,0 +1,23 @@
+<h1 class="text-center mt-2">Completed</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <div class="card-body">
+        <div *ngFor="let t of todosWithAuthors">
+          <div
+            class="col d-flex border border-black my-2 p-3 todo"
+            *ngIf="t.completed"
+          >
+            <div>
+              <div>{{ t.todo }}</div>
+              <div>
+                Assegnato a: {{ t.user?.firstName }} {{ t.user?.lastName }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

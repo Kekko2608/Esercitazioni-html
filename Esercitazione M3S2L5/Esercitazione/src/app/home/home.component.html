@@ -1,0 +1,29 @@
+<form>
+  <input
+    type="text"
+    class="my-2 ms-5"
+    [(ngModel)]="search"
+    (input)="getSearch(search)"
+  />
+</form>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-3" *ngFor="let t of todosWithAuthors">
+      <div class="card mb-3 todo">
+        <div class="card-body">
+          <h5 class="card-title">{{ t.todo }}</h5>
+          <div class="card-text">
+            <div class="my-3">
+              Assigned to: {{ t.user?.firstName }} {{ t.user?.lastName }}
+            </div>
+            <div>
+              <input type="checkbox" [(ngModel)]="t.completed" class="mx-1" />
+              Completed
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

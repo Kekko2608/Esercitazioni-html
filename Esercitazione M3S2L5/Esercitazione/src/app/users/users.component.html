@@ -1,0 +1,25 @@
+<h1 class="text-center mt-2">Users</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-8 d-flex my-4 todo" *ngFor="let user of todosWithAuthors">
+      <div class="col-4">
+        <h5 class="card-title mb-4 pt-2 fst-italic">
+          {{ user.firstName }} {{ user.lastName }}
+        </h5>
+        <img [src]="user.image" class="card-img-top" />
+      </div>
+      <div>
+        <div class="card-body col-8 ms-5">
+          <ul class="card-text my-4" *ngFor="let todos of user.todos">
+            <li>
+              {{ todos.todo
+              }}<span *ngIf="todos.completed" class="badge bg-success ms-2"
+                >Completed</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
