@@ -1,11 +1,10 @@
-<form>
-  <input
-    type="text"
-    class="my-2 ms-5"
-    [(ngModel)]="search"
-    (input)="getSearch(search)"
-  />
-</form>
+<input
+  type="text"
+  placeholder="Search Users"
+  class="my-4 ms-5 form-control w-75"
+  [(ngModel)]="search"
+  (input)="getSearch(search)"
+/>
 
 <div class="container mt-5">
   <div class="row">

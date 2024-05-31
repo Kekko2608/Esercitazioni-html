@@ -21,16 +21,15 @@ export class HomeComponent implements OnInit {
 
 search!:string
 
-getSearch(search: string): void {
+getSearch(search: string){
   this.todosWithAuthors = this.todoSvc.addUsersToTodos();
-  search = search.toLowerCase().trim();
   this.todosWithAuthors = this.todosWithAuthors.filter(todo => {
-    const firstName = todo.user?.firstName?.toLowerCase() || '';
-    const lastName = todo.user?.lastName?.toLowerCase() || '';
+    const firstName = todo.user?.firstName?.toLowerCase() ?? '';
+    const lastName = todo.user?.lastName?.toLowerCase() ?? '';
     return firstName.includes(search) || lastName.includes(search);
   });
+
   console.log(this.todosWithAuthors);
 }
-
 
 }
