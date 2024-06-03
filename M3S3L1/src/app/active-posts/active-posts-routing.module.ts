@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivePostsComponent } from './active-posts.component';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [{ path: '', component: ActivePostsComponent }];
+const routes: Routes = [{ path: 'active', component: ActivePostsComponent }];
 
 @NgModule({
   declarations: [],
