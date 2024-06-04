@@ -9,7 +9,7 @@ const routes: Route[] = [
 
   { path: 'active', loadChildren: () => import('./active-posts/active-posts.module').then(m => m.ActivePostsModule) },
   { path: 'inactive', loadChildren: () => import('./inactive-posts/inactive-posts.module').then(m => m.InactivePostsModule) },
-  { path: 'detail', loadChildren: () => import('./post-detail/post-detail.module').then(m => m.PostDetailModule) },
+  { path: 'post/:id', loadChildren: () => import('./post-detail/post-detail.module').then(m => m.PostDetailModule) },
   { path: 'single-post', loadChildren: () => import('./single-post/single-post.module').then(m => m.SinglePostModule) },
   {
     path: '',
