@@ -1,0 +1,105 @@
+<div class="bg-dark py-2">
+  <div class="container">
+    <div
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+    >
+      <ul
+        class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+      >
+        <li>
+          <a
+            routerLink="/dashboard"
+            class="nav-link px-2 text-white me-2"
+            *ngIf="isUserLoggedIn"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/"
+            class="nav-link px-2 text-secondary me-4 bg-danger text-black fst-italic fw-bold"
+            *ngIf="!isUserLoggedIn"
+            >Film Per Tutti</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/dashboard/favourites"
+            class="nav-link px-2 text-white me-2"
+            *ngIf="isUserLoggedIn"
+            >Favourites</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/auth"
+            class="nav-link px-2 text-white"
+            *ngIf="!isUserLoggedIn"
+            >Movies</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/dashboard/movies"
+            class="nav-link px-2 text-white me-2"
+            *ngIf="isUserLoggedIn"
+            >Movies</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/dashboard/add-movies"
+            class="nav-link px-2 text-white me-2"
+            *ngIf="isUserLoggedIn"
+            >Add Movies</a
+          >
+        </li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input
+          type="search"
+          class="form-control form-control-dark text-bg-white"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+      </form>
+
+      <div class="text-end">
+        <button
+          type="button"
+          routerLink="/auth"
+          class="btn btn-outline-light me-2"
+          *ngIf="!isUserLoggedIn"
+        >
+          Accedi
+        </button>
+
+        <div class="row" *ngIf="isUserLoggedIn">
+          <div class="col">
+            <div ngbDropdown class="d-inline-block">
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button class="btn btn-info btn-sm ms-3">
+                  <a
+                    routerLink="/dashboard/profile"
+                    class="nav-link px-2 text-white"
+                    *ngIf="isUserLoggedIn"
+                    >Profile</a
+                  >
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger btn-sm ms-3"
+                  (click)="logout()"
+                  *ngIf="isUserLoggedIn"
+                >
+                  Logout
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

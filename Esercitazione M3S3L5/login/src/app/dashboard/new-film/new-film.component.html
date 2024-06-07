@@ -1,0 +1,22 @@
+<div class="container my-5 text-center">
+  <div class="mb-3">
+    <p class="display-6 fw-bold">Aggiungi nuovo film</p>
+  </div>
+  <div class="d-flex flex-column gap-3 w-50 text-center mt-4">
+    <div class="d-flex flex-column gap-3">
+      <input [(ngModel)]="newMovie.title" placeholder="Titolo" />
+      <input [(ngModel)]="newMovie.duration" placeholder="Durata" />
+      <input [(ngModel)]="newMovie.rating" placeholder="Rating" />
+      <textarea
+        rows="5"
+        [(ngModel)]="newMovie.description"
+        placeholder="Descrizione"
+      >
+      </textarea>
+    </div>
+
+    <button class="btn btn-info btn-sm mt-3" (click)="addMovie()">
+      Aggiungi Film
+    </button>
+  </div>
+</div>

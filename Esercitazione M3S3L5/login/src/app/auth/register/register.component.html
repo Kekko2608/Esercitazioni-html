@@ -1,0 +1,42 @@
+<h1>Registrati</h1>
+<div class="container my-5">
+  <div class="row col-6">
+    <form>
+      <input
+        type="text"
+        name="nome"
+        [(ngModel)]="newUser.name"
+        placeholder="Il tuo nome"
+        class="form-control"
+      />
+
+      <input
+        type="text"
+        name="nome"
+        [(ngModel)]="newUser.surname"
+        placeholder="Il tuo cognome"
+        class="form-control mt-3"
+      />
+
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="newUser.email"
+        placeholder="Email"
+        class="form-control mt-3"
+      />
+
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="newUser.password"
+        placeholder="Password"
+        class="form-control mt-3"
+      />
+
+      <button (click)="register()" class="btn btn-primary mt-5">
+        Registrati
+      </button>
+    </form>
+  </div>
+</div>

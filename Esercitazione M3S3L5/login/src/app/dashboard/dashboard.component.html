@@ -1,0 +1,74 @@
+<h2 class="mt-2">Benvenuto {{ user?.name }}</h2>
+
+<div class="container col-xxl-8 px-4">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img
+        src="../../assets/image/1156_movie_classics_1200.jpg"
+        class="d-block mx-lg-auto img-fluid"
+        alt="Bootstrap Themes"
+        loading="lazy"
+      />
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+        La raccolta di film più grande di sempre !!
+      </h1>
+      <h3>Guardali tutti !!</h3>
+      <p class="lead">
+        Scopri il mondo del cinema con Film per Tutti! Qui troverai una vasta
+        selezione di film per ogni gusto e preferenza, dalle ultime uscite ai
+        classici intramontabili. Il nostro obiettivo è offrirti una piattaforma
+        accessibile e completa dove potrai esplorare, recensire e goderti i tuoi
+        film preferiti. Sia che tu sia un appassionato di azione, un romantico
+        incallito o un amante del cinema d'autore, Film per Tutti è il luogo
+        perfetto per te. Unisciti alla nostra comunità e inizia subito la tua
+        avventura cinematografica!
+      </p>
+    </div>
+  </div>
+</div>
+<main>
+  <div class="container my-5">
+    <span class="display-5">Aggiunti di recente</span>
+    <div class="row my-1">
+      <div class="col-6 my-2" *ngFor="let m of movies.slice(0, 4)">
+        <div class="card mb-3 h-100">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://picsum.photos/200"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{ m.title }}</h5>
+                <p class="card-text">{{ m.description }}</p>
+                <p class="card-text">Duration {{ m.duration }}</p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Rating {{ m.rating }}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="yellow"
+                      class="bi bi-star-fill pb-1"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

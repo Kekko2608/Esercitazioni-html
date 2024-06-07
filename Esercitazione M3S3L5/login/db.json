@@ -1,0 +1,179 @@
+{
+  "users": [
+    {
+      "email": "kekko@kekko.it",
+      "password": "$2a$10$k4gL4Gsp/7LA/U79hvQhRu7n52uPKUaPPgbxhsUPwUDmkuU./jy4i",
+      "name": "kekko",
+      "id": 1
+    },
+    {
+      "email": "pippo@pippo.com",
+      "password": "$2a$10$Rgq/RX9OWydxXpQi1bmL1u3a.LtOdxpcUwAR3zBeVHGNs.oWrUk/e",
+      "name": "pippo ",
+      "surname": "franco",
+      "id": 2
+    }
+  ],
+  "movies-popular": [
+    {
+      "id": 1,
+      "title": "Il Padrino",
+      "image": "https://example.com/il_padrino.jpg",
+      "duration": "175 min",
+      "rating": 9.2,
+      "description": "La storia epica della famiglia Corleone e del loro impero criminale."
+    },
+    {
+      "id": 2,
+      "title": "Il Padrino: Parte II",
+      "image": "https://example.com/il_padrino_parte_2.jpg",
+      "duration": "202 min",
+      "rating": 9,
+      "description": "Le origini di Vito Corleone e l'ascesa al potere di suo figlio Michael."
+    },
+    {
+      "id": 3,
+      "title": "Pulp Fiction",
+      "image": "https://example.com/pulp_fiction.jpg",
+      "duration": "154 min",
+      "rating": 8.9,
+      "description": "Storie intrecciate di criminali di Los Angeles, raccontate in modo non lineare."
+    },
+    {
+      "id": 4,
+      "title": "Forrest Gump",
+      "image": "https://example.com/forrest_gump.jpg",
+      "duration": "142 min",
+      "rating": 8.8,
+      "description": "La vita straordinaria di Forrest Gump, un uomo semplice con un cuore grande."
+    },
+    {
+      "id": 5,
+      "title": "Il cavaliere oscuro",
+      "image": "https://example.com/il_cavaliere_oscuro.jpg",
+      "duration": "152 min",
+      "rating": 9,
+      "description": "Batman affronta il Joker, un criminale geniale e psicotico che minaccia Gotham City."
+    },
+    {
+      "id": 6,
+      "title": "Fight Club",
+      "image": "https://example.com/fight_club.jpg",
+      "duration": "139 min",
+      "rating": 8.8,
+      "description": "Un uomo disilluso trova un nuovo scopo nella vita attraverso un club di combattimenti clandestini."
+    },
+    {
+      "id": 7,
+      "title": "Inception",
+      "image": "https://example.com/inception.jpg",
+      "duration": "148 min",
+      "rating": 8.8,
+      "description": "Un ladro con l'abilità di entrare nei sogni deve compiere un'ultima missione impossibile."
+    },
+    {
+      "id": 8,
+      "title": "Matrix",
+      "image": "https://example.com/matrix.jpg",
+      "duration": "136 min",
+      "rating": 8.7,
+      "description": "Un hacker scopre la verità sulla realtà simulata in cui vive e inizia una ribellione."
+    },
+    {
+      "id": 9,
+      "title": "Il Signore degli Anelli: La Compagnia dell'Anello",
+      "image": "https://example.com/lotr_la_compagnia_dell_anello.jpg",
+      "duration": "178 min",
+      "rating": 8.8,
+      "description": "Un giovane hobbit intraprende un pericoloso viaggio per distruggere un anello malvagio."
+    },
+    {
+      "id": 10,
+      "title": "Il Signore degli Anelli: Le Due Torri",
+      "image": "https://example.com/lotr_le_due_torri.jpg",
+      "duration": "179 min",
+      "rating": 8.7,
+      "description": "La compagnia si divide e continua la lotta contro le forze del male."
+    },
+    {
+      "id": 11,
+      "title": "Il Signore degli Anelli: Il Ritorno del Re",
+      "image": "https://example.com/lotr_il_ritorno_del_re.jpg",
+      "duration": "201 min",
+      "rating": 8.9,
+      "description": "Il destino della Terra di Mezzo viene deciso in una battaglia epica."
+    },
+    {
+      "id": 12,
+      "title": "Schindler's List",
+      "image": "https://example.com/schindlers_list.jpg",
+      "duration": "195 min",
+      "rating": 8.9,
+      "description": "La storia vera di Oskar Schindler, che salvò migliaia di ebrei durante l'Olocausto."
+    },
+    {
+      "id": 13,
+      "title": "Shutter Island",
+      "image": "https://example.com/shutter_island.jpg",
+      "duration": "138 min",
+      "rating": 8.2,
+      "description": "Due detective indagano sulla scomparsa di una paziente da un manicomio."
+    },
+    {
+      "id": 14,
+      "title": "The Prestige",
+      "image": "https://example.com/the_prestige.jpg",
+      "duration": "130 min",
+      "rating": 8.5,
+      "description": "Due maghi rivali cercano di superarsi a vicenda con trucchi sempre più pericolosi."
+    },
+    {
+      "id": 15,
+      "title": "Interstellar",
+      "image": "https://example.com/interstellar.jpg",
+      "duration": "169 min",
+      "rating": 8.6,
+      "description": "Un gruppo di astronauti cerca un nuovo pianeta abitabile per salvare l'umanità."
+    },
+    {
+      "id": 16,
+      "title": "Django Unchained",
+      "image": "https://example.com/django_unchained.jpg",
+      "duration": "165 min",
+      "rating": 8.4,
+      "description": "Un ex schiavo e un cacciatore di taglie si uniscono per liberare la moglie di lui."
+    },
+    {
+      "id": 17,
+      "title": "Gladiator",
+      "image": "https://example.com/gladiator.jpg",
+      "duration": "155 min",
+      "rating": 8.5,
+      "description": "Un generale romano tradito diventa un gladiatore in cerca di vendetta."
+    },
+    {
+      "id": 18,
+      "title": "Titanic",
+      "image": "https://example.com/titanic.jpg",
+      "duration": "195 min",
+      "rating": 7.8,
+      "description": "La storia d'amore tra Jack e Rose sullo sfondo del disastro del Titanic."
+    },
+    {
+      "id": 19,
+      "title": "Se7en",
+      "image": "https://example.com/se7en.jpg",
+      "duration": "127 min",
+      "rating": 8.6,
+      "description": "Due detective indagano su una serie di omicidi ispirati ai sette peccati capitali."
+    },
+    {
+      "id": 20,
+      "title": "Star Wars: Episodio IV - Una nuova speranza",
+      "image": "https://example.com/star_wars_iv.jpg",
+      "duration": "121 min",
+      "rating": 8.6,
+      "description": "Luke Skywalker si unisce alla Ribellione per salvare la galassia dall'Impero."
+    }
+  ]
+}
