@@ -1,4 +1,14 @@
-<h1>Profilo</h1>
+<div class="d-flex">
+  <h1>Profilo</h1>
+  <div>
+    <img
+      src="../../../assets/image/7033146-icona-profilo-accesso-icona-testa-vettoriale.jpg"
+      alt="profile"
+      class="img-fluid ms-3"
+      width="50em"
+    />
+  </div>
+</div>
 
 <div class="card-body">
   <div class="form-group mt-3">
@@ -15,17 +25,19 @@
   </div>
 
   <div class="container my-5">
-    <h2>Lista Utenti loggati</h2>
-    <table class="table">
+    <h2>Lista utenti registrati</h2>
+    <table class="table mt-4">
       <thead>
         <tr>
           <th>Nome</th>
+          <th>Cognome</th>
           <th>Email</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let u of users">
           <td>{{ u.name }}</td>
+          <td>{{ u.surname }}</td>
           <td>{{ u.email }}</td>
         </tr>
       </tbody>

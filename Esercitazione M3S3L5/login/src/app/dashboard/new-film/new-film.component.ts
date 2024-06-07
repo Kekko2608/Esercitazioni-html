@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MoviesService } from '../../services/movies.service';
 import { iMovies } from '../../models/movies';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-film',
@@ -18,7 +19,7 @@ export class NewFilmComponent {
     rating: 0
   };
 
-  constructor(private moviesSvc: MoviesService) { }
+  constructor(private moviesSvc: MoviesService,private router: Router) { }
 
   ngOnInit(): void {
     this.loadMovies();
@@ -41,5 +42,6 @@ export class NewFilmComponent {
       duration: '',
       rating: 0
     };
+    this.router.navigate(['/dashboard/movies']);
   }
 }

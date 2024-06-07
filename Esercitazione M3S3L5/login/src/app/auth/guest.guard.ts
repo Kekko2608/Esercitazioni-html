@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, CanActivateChild, GuardResult, MaybeAsync, RouterStateSnapshot } from '@angular/router';
+import { ActivatedRouteSnapshot, CanActivate, CanActivateChild, GuardResult, MaybeAsync, Router, RouterStateSnapshot } from '@angular/router';
 import { AuthService } from './auth.service';
 
 @Injectable({
@@ -7,7 +7,9 @@ import { AuthService } from './auth.service';
 })
 export class GuestGuard implements CanActivate, CanActivateChild {
 
-  constructor(private authSvc:AuthService){}
+  constructor(private authSvc:AuthService,
+              private router:Router
+  ){}
 
   canActivate(
     route: ActivatedRouteSnapshot,

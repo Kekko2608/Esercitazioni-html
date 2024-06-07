@@ -1,12 +1,16 @@
-<div class="container my-5 text-center">
+<div class="container my-5">
   <div class="mb-3">
     <p class="display-6 fw-bold">Aggiungi nuovo film</p>
   </div>
-  <div class="d-flex flex-column gap-3 w-50 text-center mt-4">
-    <div class="d-flex flex-column gap-3">
+  <div class="d-flex flex-column gap-3 w-50 mt-5">
+    <div class="d-flex flex-column gap-2">
+      <h5>Titolo</h5>
       <input [(ngModel)]="newMovie.title" placeholder="Titolo" />
+      <h5 class="mt-2">Durata (min.)</h5>
       <input [(ngModel)]="newMovie.duration" placeholder="Durata" />
+      <h5 class="mt-2">Rating</h5>
       <input [(ngModel)]="newMovie.rating" placeholder="Rating" />
+      <h5 class="mt-2">Descrizione</h5>
       <textarea
         rows="5"
         [(ngModel)]="newMovie.description"
