@@ -2,39 +2,40 @@
 <div class="container my-5">
   <div class="row col-6">
     <form>
+      <h5>Il tuo nome</h5>
       <input
         type="text"
         name="nome"
         [(ngModel)]="newUser.name"
         placeholder="Il tuo nome"
-        class="form-control"
+        class="form-control mb-3"
       />
-
+      <h5>Il tuo cognome</h5>
       <input
         type="text"
         name="nome"
         [(ngModel)]="newUser.surname"
         placeholder="Il tuo cognome"
-        class="form-control mt-3"
+        class="form-control my-3"
       />
-
+      <h5>E-mail</h5>
       <input
         type="email"
         name="email"
         [(ngModel)]="newUser.email"
         placeholder="Email"
-        class="form-control mt-3"
+        class="form-control my-3"
       />
-
+      <h5>Password</h5>
       <input
         type="password"
         name="password"
         [(ngModel)]="newUser.password"
-        placeholder="Password"
-        class="form-control mt-3"
+        placeholder="Password (min. 4 caratteri)"
+        class="form-control my-3"
       />
 
-      <button (click)="register()" class="btn btn-primary mt-5">
+      <button (click)="register()" class="btn btn-danger mt-5">
         Registrati
       </button>
     </form>

@@ -6,6 +6,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NewFilmComponent } from './new-film/new-film.component';
+import { Page404Component } from '../page404/page404.component';
 
 const routes: Routes = [
   { path: '',
@@ -30,7 +31,12 @@ const routes: Routes = [
   {
     path: 'add-movies',
     component: NewFilmComponent
+  },
+  {
+    path: '**',
+    component: Page404Component
   }
+
 
 ];
 
