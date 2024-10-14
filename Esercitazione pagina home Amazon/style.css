@@ -1,0 +1,153 @@
+
+
+/********* Configurazione Dispaly usata Iphone SE **********/
+
+
+body {
+    margin: 0;
+    background-color:rgb(218, 218, 218);
+    font-family:  sans-serif,Helvetica,Arial;
+    font-size: 10px;
+}
+
+
+/************ header ***************/
+header {
+    margin: 0;
+    background-color: rgba(15, 15, 36, 0.889);
+    
+}
+
+#logo1 {
+    text-align: left;
+    width:4em;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+
+.menubar {
+    color: white;
+    font-size: 0.5em;
+    text-decoration: none;
+    margin: 0 2px;
+    
+}
+
+#menubar {
+    background-color: rgb(57, 57, 64);
+    padding-left: 10px;
+}
+
+
+/************ fine header ***************/
+
+/************ main ***************/
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 1em;
+    margin-left: 2px;
+}
+
+main {
+    margin: 3%;
+}
+
+#linered {
+    background-color: rgb(255, 94, 0);
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size:0.5em ;
+    height: 2em;
+    padding-top: 1%;
+
+}
+
+#regali {
+    background-image: url(./Amazon/assets/images/bg-image.png);
+    background-size: contain;
+    color: white;
+    text-align: center;
+    height: 6em;
+    margin: 0;
+    
+}
+
+#guide {
+    padding-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+#regali1 {
+    font-size: 0.5em;
+    margin-top: 0;
+}
+
+#articoli {
+    background-color: white;
+    height: 12em;
+    margin-top: 5%;
+}
+
+.find {
+    font-size:xx-small;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-size:0.8em;
+}
+
+.riquadro {
+    width: 22%;
+    border-radius: 6%;
+    float: left;
+    margin: 1.5%;
+    height: 9em;
+    margin-top: 1em;
+    box-shadow: 3px 3px rgb(244, 239, 239);
+}
+
+.bigimage {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size:0.8em;
+
+}
+
+
+/************ fine main ***************/
+
+/************ footer ***************/
+
+footer {
+    text-align: center;
+    background-color:rgba(15, 15, 36, 0.889) ;
+    height: 10rem;
+}
+
+#return {
+    background-color: rgb(57, 57, 64);
+    padding: 5px 0;
+   
+}
+
+.return {
+    color: white;
+    font-size: 0.8em;
+}
+
+#logo2 {
+    width: 20%;
+    text-align: center;
+    padding: 4em;
+
+}
+
+
+/************ fine footer ***************/

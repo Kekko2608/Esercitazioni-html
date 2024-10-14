@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/edit.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Edit Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark">
+    <header>
+      <nav class="navbar bg-dark">
+        <div class="container ms-5">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/netflix_logo.png"
+              alt="Bootstrap"
+              width="100"
+              height="50"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-dark w-50 mx-auto text-light">
+      <div class="border-bottom border-secondary mb-3 w-75" id="title">
+        <h1 class="">Edit Profile</h1>
+      </div>
+      <div>
+        <div class="container">
+          <div class="row flex-sm-column flex-md-row flex-lg-row flex-xl-row">
+            <div class="col d-flex justify-content-end pe-0">
+              <img src="./assets/avatar.png" alt="avatar" id="avatar" />
+              <i id="pencil" class="bi bi-pencil"></i>
+            </div>
+            <div class="col ps-0">
+              <div class="col border-bottom border-secondary pb-3">
+                <p class="bg-secondary ps-2 py-1 mt-sm-2 w-75">
+                  Strive student
+                </p>
+                <p class="mb-0">Language:</p>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-dark border border-light dropdown-toggle py-0 px-2"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    id="lingua"
+                  >
+                    English
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Italian</a></li>
+                    <li><a class="dropdown-item" href="#">Deutch</a></li>
+                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col border-bottom border-secondary pb-3 mt-3">
+                <p>Maturity Settings:</p>
+                <div class="bg-secondary w-50 text-center">
+                  ALL MATURITY RATINGS
+                </div>
+                <p id="subtitle">
+                  Show titles of all maturity ratings for this profile.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary px-3 py-0 fs-6"
+                >
+                  EDIT
+                </button>
+              </div>
+              <div class="col pb-3 mt-3">
+                <p class="mb-1">Autoplay controls</p>
+                <div>
+                  <input
+                    class="form-check-input bg-transparent check"
+                    type="checkbox"
+                    value=""
+                    id="check1"
+                  />
+                  <span class="info-check"
+                    >Autoplay next episode in a series on all devices.</span
+                  >
+                </div>
+                <div>
+                  <input
+                    class="form-check-input bg-transparent"
+                    type="checkbox"
+                    value=""
+                    id="check2"
+                  />
+                  <span class="info-check"
+                    >Autoplay previews while browsing on all devices.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="w-100 my-4 ms-5 text-center">
+      <div class="border-top border-secondary" id="tasti">
+        <button
+          type="button"
+          class="btn btn-outline-secondary px-3 mx-2 my-2"
+          id="tast1"
+        >
+          SAVE
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary px-3 mx-2 my-2"
+          id="tast2"
+        >
+          CANCEL
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary px-4 mx-2 my-2"
+          id="tast3"
+        >
+          DELETE PROFILE
+        </button>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
